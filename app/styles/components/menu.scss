@@ -1,0 +1,106 @@
+.bv-menu-wrapper{
+  position: absolute;
+  width: 30%;
+  top: 0;
+  right: 0;
+  transition: all .2s cubic-bezier(.7,.24,.85,.21);
+}
+.bv-menu-visible .bv-menu-wrapper{
+  width:70%;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:         0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bv-nav{
+  background-color:#662C91;
+  width:100%;
+  position: relative;
+  left:100%;
+  transition: all .2s cubic-bezier(.26,.75,.2,.79);
+  ul{
+    padding: .5rem 0;
+    margin: 0;
+    &.bv-nav-pages{
+      background-color: #4D226D;
+    }
+    &.bv-nav-utilities{
+      margin-top: 50px;
+    }
+    li{
+      list-style: none;
+      a{
+        padding: .5rem 15px;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  .bv-nav-logout{
+    padding: .5rem 15px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.bv-menu-transition-out .bv-nav{
+  display: block;
+  left:100%;
+  transition: all .2s cubic-bezier(.1,.7,.3,.9);
+}
+.bv-menu-transition-in .bv-nav,.bv-menu-visible .bv-nav{
+  display: block;
+  left:0%;
+  transition: all .2s cubic-bezier(.1,.7,.3,.9);
+}
+
+.bv-menu-hidden .bv-nav{
+  display: none;
+}
+
+.bv-btn-menu{
+  background-color: #662C91;
+  color: #fff;
+  width: 100%;
+  float: right;
+  position: relative;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: all .2s cubic-bezier(.7,.24,.85,.21);
+  .bv-hamburger{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    float: right;
+    span{
+      display: block;
+      position: relative;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      opacity: 1;
+      left: 0;
+    }
+    span:nth-child(1) {
+      top: 3px;
+    }
+    span:nth-child(2) {
+      top: 7px;
+    }
+    span:nth-child(3) {
+      top: 11px;
+    }
+  }
+}
+
+.bv-menu-visible .bv-btn-menu{
+  transition: all .2s cubic-bezier(.1,.7,.3,.9);
+}

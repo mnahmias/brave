@@ -1,0 +1,21 @@
+.bv-header{
+  background-color:#93278F;
+  color: #fff;
+  width: 100%;
+  overflow: auto;
+  height:50px;
+  position: fixed;
+  z-index: 2;
+  overflow: visible;
+  h1{
+    font-size:14px;
+    margin:0;
+    padding:15px 20px;
+    line-height:20px;
+    float: left;
+  }
+}
+
+.bv-menu-visible{
+  overflow: visible;
+}

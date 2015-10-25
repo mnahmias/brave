@@ -1,0 +1,25 @@
+.bv-error{
+  background-color: #ED1C24;
+  color: #fff;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: .3s all cubic-bezier(.2,.74,.29,.84);
+  p{
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0px;
+    line-height: 20px;
+  }
+}
+
+.bv-error.bv-transition{
+    display:block;
+}
+
+.bv-error.bv-visible{
+  display: block;
+  top: 50px;
+}

@@ -1,0 +1,54 @@
+.bv-field{
+  background-color: #fff;
+  padding: 0 1rem;
+  border-radius: 2px;
+  margin: 1rem 0;
+  height: 42px;
+  overflow: auto;
+  border: 2px solid #fff;
+  overflow: hidden;
+  label{
+    width: 80px;
+    float: left;
+    color: #778F9B;
+    line-height: 40px;
+  }
+  input{
+    border: 0;
+    line-height: 36px;
+    padding: 2px 0;
+    width: 65%;
+    float: left;
+    color: #36464E;
+  }
+}
+
+::-ms-reveal{
+  display : none ;
+}
+
+.bv-field-error{
+  border: 2px solid #ED1C24;
+}
+
+.bv-show-password{
+  width: 10%;
+  float: right;
+  height: 40px;
+  font-size: 14px;
+  img{
+    padding-top: 13px;
+    max-width: 22px;
+    float: right;
+  }
+}
+
+.bv-help{
+  color: #616A75;
+  text-decoration: none;
+  float: right;
+  line-height: 2rem;
+  &:hover{
+    text-decoration: underline;
+  }
+}
